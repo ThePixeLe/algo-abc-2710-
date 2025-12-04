@@ -110,3 +110,20 @@ Tests d'intégration
 
 **Bonne formation et bon code ! 💻**
 
+## Configuration VS Code
+
+Pour configurer correctement le projet dans VS Code :
+
+1. Créez le dossier `.vscode` à la racine du projet :
+```bash
+mkdir -p .vscode 
+
+Créez le fichier `.vscode/settings.json` avec le contenu suivant :
+
+```json
+{
+    "java.project.sourcePaths": [
+        "algo-abc-2710-/algo-abc-2710"
+    ],
+    "java.project.outputPath": "algo-abc-2710-/algo-abc-2710/bin"
+}
