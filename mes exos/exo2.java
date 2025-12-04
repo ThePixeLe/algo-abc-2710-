@@ -19,26 +19,37 @@
 
 import java.util.Scanner;
 
-public class exo2  {
-  public static void main(String[] args ) {
-   Scanner sc = new Scanner(System.in);
-   int a;
-   int b;
-   int resultat;
+public class exo2 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int a;
+    int b;
+    int resultat;
 
-   System.out.print("a ="); 
-   a = sc.nextInt();
+    // Lire les valeurs de a et b
+    System.out.print("a =");
+    a = sc.nextInt();
 
-   System.out.print("b =");
-   b = sc.nextInt();
+    System.out.print("b =");
+    b = sc.nextInt();
 
-   System.out.println();
+    System.out.println();
+ 
+    // Calculer la soustraction
+    resultat = a - b;
+ 
+    // Afficher le résultat
+    System.out.println("resultat = a - b = " + resultat);
+    System.out.println();
+    System.out.println("resultat vaut" + resultat);
 
-   resultat = a - b;
+    // Vérifier si le résultat est inférieur à 0
 
-   System.out.println("resultat = a - b");
-   System.out.println();
-   System.out.println("resultat vaut" +resultat);
+    if (resultat < 0) {
+     System.out.println("resultat est inférieur à 0");
+    } else {
+      System.out.println("resultat est supérieur ou égal à 0");
+    }
 
     sc.close();
   }
