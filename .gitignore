@@ -1,1 +1,7 @@
- .DS_Store
+.DS_Store
+*.class
+*.jar
+.vscode/
+.idea/
+*.iml
+/bin/

@@ -1,5 +1,3 @@
-package entrainement;
-
 import java.util.Scanner;
 
 public class message {
