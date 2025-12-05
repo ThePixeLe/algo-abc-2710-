@@ -1,0 +1,15 @@
+# Fichiers compilés Java
+*.class
+*.jar
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Binaires
+/bin/
