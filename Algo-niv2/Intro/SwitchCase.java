@@ -1,4 +1,3 @@
-package Intro;
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 
 
@@ -43,6 +42,8 @@ public class SwitchCase {
                       System.out.println("Mois inconnu");                  
                     break;
                }
+
+                clavier.close();
 
                 
 

@@ -1,6 +1,3 @@
-package test;
-
-
 import java.util.Scanner;
 
 public class exoNiv1HB {

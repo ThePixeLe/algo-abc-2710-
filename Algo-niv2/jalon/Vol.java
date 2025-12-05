@@ -1,5 +1,3 @@
-package jalon;
-
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -158,7 +156,7 @@ public class Vol {
                                     errorDate = false;
 
 
-                } catch (Exception e) {
+                } catch (NumberFormatException | java.time.format.DateTimeParseException e) {
                     System.out.println("Erreur lors de la saisie des dates : ");
                     System.out.println("Veuillez entrer la date de départ au format 'dd/MM/yyyy HH:mm:ss' et la durée au format 'HH:mm'.");
                     errorDate = true;

@@ -1,5 +1,3 @@
-package Intro;
-
 import java.util.Scanner; /* Importation de la bibliothèque Java Scanner */
 
 public class Exception {
@@ -21,6 +19,7 @@ public class Exception {
         }
 
         System.out.println("Fin du programme.");
+        scanner.close();
     }
 
 

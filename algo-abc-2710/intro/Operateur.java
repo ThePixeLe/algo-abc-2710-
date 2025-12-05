@@ -1,5 +1,3 @@
-package intro;
-
 public class Operateur {
 
   public static void main(String[] args) {
