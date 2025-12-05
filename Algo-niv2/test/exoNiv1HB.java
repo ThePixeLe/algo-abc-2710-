@@ -44,6 +44,7 @@ public class exoNiv1HB {
     }
 
     System.out.println("Merci pour votre commande, ça sera près dans 20min ");
+    System.out.println("Résumé : Steak=" + steak + ", Cuisson=" + cuisson + ", Frites=" + frites + ", Soda=" + soda);
     clavier.close();
 
     }

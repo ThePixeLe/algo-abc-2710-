@@ -31,6 +31,7 @@ public class QuizzFor {
 
             }
 
+            clavier.close();
 
         }
 
