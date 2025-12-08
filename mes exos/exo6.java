@@ -27,8 +27,7 @@ public class exo6 {  /* Nom de la classe */
            
         String  prenom; 
         int age;
-        String resultat;
-        int resultat1; 
+       
 
         // Lire les valeurs
 
