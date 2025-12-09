@@ -15,6 +15,9 @@ public class SwitchCase {
 
         age = clavier.nextInt();
 
+        
+
+
         switch(age){ /* On initialise le switch avec la variable age , on va tester si age à les valeurs suivantes */
             /* En fonction des valeurs le message change */
             case 2, 3, 4:
