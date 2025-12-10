@@ -14,46 +14,37 @@
  * 
  * 
  * 
-*/
+ */
 
-import java.util.Scanner;     /*Importation de la bibliothèque Java Scanner */
+import java.util.Scanner; /*Importation de la bibliothèque Java Scanner */
 
-public class exo7 {    /* Nom de la classe */
-      
-    public static void main (String [] args ) {    /*Toujours le mettre pour tester votre code */
+public class exo7 { /* Nom de la classe */
 
-     /***--------  Début du code  -------------------****/
+  public static void main(String[] args) { /* Toujours le mettre pour tester votre code */
 
-      Scanner sc = new Scanner(System.in);      // Déclaration du scanner Instance de l'Objet Scanner
+    /*** -------- Début du code ------------------- ****/
 
-     boolean y;
-     boolean n;
-     String reponse;
+    Scanner sc = new Scanner(System.in); // Déclaration du scanner Instance de l'Objet Scanner
 
-         // Lire les variables
+    // Poser la question à l'utilisateur
+    System.out.print("Do you speak english (Y/N)? ");
 
-         System.out.print("y =");
-         y = sc.nextBoolean();
+    // Lire la réponse et la convertir en majuscules sans espaces
+    String reponse = sc.nextLine().trim().toUpperCase();
 
-
-         System.out.print("n");
-         n = sc.nextBoolean();
-
-         System.out.print("Tu n as pas repondu a la question");
-         reponse = sc.nextLine();
-
-     
-
-       // Vérifier si le résultat de la question
-
-       if (y) {
-        System.out.println("Nice to meet you");
-       } else if (n) {
-        System.out.println("So learn english !");
-       } else {
-        System.out.println("Tu n as pas repondu a la question");
-       }
-
-        sc.close();  // Fermeture du Scanner
+    // Vérifier si le résultat de la question avec switch (syntaxe classique)
+    switch (reponse) {
+      case "Y":
+        System.out.println("Nice to meet you"); // Si réponse est Y
+        break;
+      case "N":
+        System.out.println("So learn english !"); // Si réponse est N
+        break;
+      default:
+        System.out.println("Tu n as pas repondu a la question"); // Autre réponse
+        break;
     }
+
+    sc.close(); // Fermeture du Scanner
+  }
 }
