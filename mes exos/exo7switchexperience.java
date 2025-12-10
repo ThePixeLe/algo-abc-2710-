@@ -15,9 +15,10 @@
  * 
  * 
  */
+
 import java.util.Scanner; /*Importation de la bibliothèque Java Scanner */
 
-public class exo7 { /* Nom de la classe */
+public class exo7switchexperience  { /* Nom de la classe */
 
   public static void main(String[] args) { /* Toujours le mettre pour tester votre code */
 
@@ -29,17 +30,21 @@ public class exo7 { /* Nom de la classe */
     System.out.print("Do you speak english (Y/N)? ");
 
     // Lire la réponse et la convertir en majuscules sans espaces
-    String reponse = sc.nextLine().trim();
-    
-    // Vérifier  le résultat de la question
-    if (reponse.equalsIgnoreCase("Y")) {
-        System.out.println("Nice to meet you");
-    } else if (reponse.equalsIgnoreCase("N")) {
-        System.out.println("So learn english !");
-    } else {
-        System.out.println("Tu n as pas repondu a la question");
+    String reponse = sc.nextLine().trim().toUpperCase();
+
+    // Vérifier si le résultat de la question avec switch (syntaxe classique)
+    switch (reponse) {
+      case "Y":
+        System.out.println("Nice to meet you"); // Si réponse est Y
+        break;
+      case "N":
+        System.out.println("So learn english !"); // Si réponse est N
+        break;
+      default:
+        System.out.println("Tu n as pas repondu a la question"); // Autre réponse
+        break;
     }
-    
-    sc.close();
+
+    sc.close(); // Fermeture du Scanner
   }
 }
