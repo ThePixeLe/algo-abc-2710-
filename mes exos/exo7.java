@@ -50,12 +50,10 @@ public class exo7 {    /* Nom de la classe */
         System.out.println("Nice to meet you");
        } else if (n) {
         System.out.println("So learn english !");
-       } else (reponse) {
+       } else {
         System.out.println("Tu n as pas repondu a la question");
        }
 
-
-
-        sc.close();// Fermeture du Scanner
+        sc.close();  // Fermeture du Scanner
     }
 }
