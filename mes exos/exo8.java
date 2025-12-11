@@ -28,6 +28,24 @@
  * 
 */
 
+// pseudo code : 
+// Importation de la bibliothèque Java Scanner
+//  Nom de la classe
+// Déclaration du scanner Instance de l'Objet Scanner
+// demander le prenom --> stocker dans une variable
+// demander le nom    ---> stocker dans une variable
+// demander le mail --> stocker dans une variable
+// demander le mot de passe --> stocker dans une variable
+// demander la confirmation du mot de passe --> stocker dans une variable 
+// lire les reponse 
+//puis verifier les variables du mot de passe avec une condition if / else 
+// si reponse exact repondre  Merci ******* , votre inscription a bien été effectuée, vous recevrez un mail de confirmation à l'adresse : *******@arfp.asso.fr
+//sinon  repondre inscription annulée
+// Fin si
+// Scanner fermer
+
+
+
 import java.util.Scanner; /*Importation de la bibliothèque Java Scanner */
 
 public class exo8 {  /* Nom de la classe */
@@ -42,29 +60,35 @@ public class exo8 {  /* Nom de la classe */
          // Poser les questions à l'utilisateur
 
          System.out.print("Vueillez renseignez votre prenom ?");
+         String prenom = sc.nextLine().trim();
 
          System.out.print(" Vueillez renseignez votre nom ?");
+         String nom = sc.nextLine().trim();
 
          System.out.print(" Vueillez renseignez votre adresse email ?");
+         String adresseEmail = sc.nextLine().trim();
 
          System.out.print(" Vueillez renseignez votre mot de passe ?");
+         String motDePasse = sc.nextLine().trim();
 
          System.out.print(" Vueillez confirmez votre mot de passe");
+         String confirmationMotDePasse = sc.nextLine().trim();
 
          // Lire la réponse et la convertir en majuscules sans espaces
 
-         String reponse = sc.nextLine().trim();
+         String motDePasse = sc.nextLine().trim();
+         
 
          // Vérifier  le résultat de la question
 
-         if (reponse.equalsIgnoreCase(reponse)) {
-            System.out.println("inscription annulée");
-         } else  {
+         if (motDePasse.equals(confirmation)) {
             System.out.println("Merci votre inscription a bien été effectuée, vous recevrez un mail de confirmation à l'adresse :");
+         } else  {
+            System.out.println("inscription annulée");
          }
 
 
     sc.close();  /* Fermez vos scanner à la fin */
     }
 }
-
+// test push
