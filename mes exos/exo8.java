@@ -57,31 +57,34 @@ public class exo8 {  /* Nom de la classe */
          Scanner sc = new Scanner(System.in); // Déclaration du scanner Instance de l'Objet Scanner
 
 
-         // Poser les questions à l'utilisateur
+         // Poser les questions à l'utilisateur et lire les valeurs
 
          System.out.print("Vueillez renseignez votre prenom ?");
-         String prenom = sc.nextLine().trim();
+         String prenom = sc.nextLine();
 
          System.out.print(" Vueillez renseignez votre nom ?");
-         String nom = sc.nextLine().trim();
+         String nom = sc.nextLine();
 
          System.out.print(" Vueillez renseignez votre adresse email ?");
-         String adresseEmail = sc.nextLine().trim();
+         String adresseEmail = sc.nextLine();
 
          System.out.print(" Vueillez renseignez votre mot de passe ?");
-         String motDePasse = sc.nextLine().trim();
+         String motDePasse = sc.nextLine();
 
          System.out.print(" Vueillez confirmez votre mot de passe");
-         String confirmationMotDePasse = sc.nextLine().trim();
+         String confirmationMotDePasse = sc.nextLine();
 
-         // Lire la réponse et la convertir en majuscules sans espaces
+         // Lire la réponse et afficher les valeurs
 
-         String motDePasse = sc.nextLine().trim();
+         String prenom = "";
+         System.out.println("Bonjour" + prenom);
+
+        
          
 
          // Vérifier  le résultat de la question
 
-         if (motDePasse.equals(confirmation)) {
+         if (motDePasse.equals(confirmationMotDePasse)) {
             System.out.println("Merci votre inscription a bien été effectuée, vous recevrez un mail de confirmation à l'adresse :");
          } else  {
             System.out.println("inscription annulée");
@@ -91,4 +94,4 @@ public class exo8 {  /* Nom de la classe */
     sc.close();  /* Fermez vos scanner à la fin */
     }
 }
-// test push
+
