@@ -36,7 +36,7 @@ import java.util.Scanner;
  * EXERCICE 1.2 - PARTIE 2 : CALCUL DU VOLUME D'UNE SPHÈRE
  * Formule : Volume = (4/3) × π × R³
  */
-public class SphereVolumeSeulement {
+public class exo_Volume {
 
     public static void main(String[] args) {
         // 🔹 ÉTAPE 1: Créer le scanner pour lire le clavier
