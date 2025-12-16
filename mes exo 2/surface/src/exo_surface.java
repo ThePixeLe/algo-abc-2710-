@@ -29,6 +29,7 @@ public class exo_surface {
 
 
         System.out.println("\n--- RÉSULTAT ---");
+        System.out.printf("Aire du secteur circulaire: %.2f unités%n", rayon);
 
          
 
@@ -36,6 +37,6 @@ public class exo_surface {
          sc.close();
 
 
-          System.out.println("\n Calcul du volume terminé !");
+          System.out.println("\n Calcul de la surface terminé !");
     }
 }
