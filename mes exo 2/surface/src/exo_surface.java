@@ -20,7 +20,7 @@ public class exo_surface {
          rayon = sc.nextDouble();
 
           if (rayon < 0) {
-            System.out.println("❌ ERREUR : Le rayon ne peut pas être négatif !");
+            System.out.println(" ERREUR : Le rayon ne peut pas être négatif !");
             sc.close();
             return; 
         }
