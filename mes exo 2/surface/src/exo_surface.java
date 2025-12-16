@@ -19,9 +19,23 @@ public class exo_surface {
          System.out.print("Entrez le rayon : ");
          rayon = sc.nextDouble();
 
+          if (rayon < 0) {
+            System.out.println("❌ ERREUR : Le rayon ne peut pas être négatif !");
+            sc.close();
+            return; 
+        }
+
+        l aire du secteur circulaire = Math.PI * Math.pow(rayon,2) * angle /360;
+
+
+        System.out.println("\n--- RÉSULTAT ---");
+
          
 
 
          sc.close();
+
+
+          System.out.println("\n Calcul du volume terminé !");
     }
 }
