@@ -1,5 +1,14 @@
-public class App {
+import java.util.Scanner; 
+
+
+public class exo_surface {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+         
+        Scanner sc = new Scanner(System.in);
+
+
+
+
+         sc.close();
     }
 }
