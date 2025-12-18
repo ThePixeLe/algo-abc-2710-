@@ -7,15 +7,17 @@ public class exo_2_2 {
 
         System.out.println("Tri de nombres");
        
-        System.out.println("Vueillez entrez le premier valeur : ");
+        System.out.println("Vueillez entrez le premier nombre : ");
         int a = sc.nextInt();
 
-         System.out.print("Vueillez Entrez la deuxième valeur : ");
+         System.out.print("Vueillez Entrez le deuxième nombre : ");
         int b = sc.nextInt();
 
 
         if (a < b) {
-            System.out.println("Le chiffre est plus grand que :");
+            System.out.printf("Ordre croissant : %d puis %d\n", a, b);
+        } else {
+            System.out.printf("Ordre croissant : %d puis %d\n", b, a);
         }
 
         sc.close();
