@@ -23,4 +23,5 @@ public class exo_2_2 {
         sc.close();
     }
 
+    
 }

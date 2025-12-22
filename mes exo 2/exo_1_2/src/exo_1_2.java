@@ -24,18 +24,24 @@ public class exo_1_2 {
        // Math.PI ≈ 3.14159 - constante précise fournie par Java
        // Math.pow(rayon, 2) = rayon × rayon (méthode plus précise)
        aire = 4 * Math.PI * Math.pow(rayon, 2);
+       double airarr = arrondir(aire,4); 
 
        // CALCUL DU VOLUME : formule (4/3)PIR³
        // CRUCIAL : (4.0/3.0) et non (4/3) pour éviter la division entière
        volume = (4.0 / 3.0) * Math.PI * Math.pow(rayon, 3);
+       double volumearr = arrondir(volume, 4 );
 
        // AFFICHAGE avec printf - formatage professionnel
        // %f = remplace par un nombre décimal, \n = saut de ligne
-       System.out.printf("la surface de la sphere est : %f km2\n", aire);
-       System.out.printf("son volume est de : %f km3\n", volume);
+       System.out.printf("la surface de la sphere est : %f km2\n", airarr);
+       System.out.printf("son volume est de : %f km3\n", volumearr);
 
        
 
        sc.close(); // Fermeture du scanner
+    }
+
+    public static double arrondir (double nombre, int nbDecimal ) {
+        return (double)( (long)( nombre*Math.pow(10, nbDecimal) +0.5)/Math.pow(10, nbDecimal));
     }
 }
