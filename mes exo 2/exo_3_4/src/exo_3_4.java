@@ -136,21 +136,21 @@ import java.util.*;
 
 public class exo_3_4 {
     public static void main(String [] args) throws Exception {
-
-
-        int index = 0;
+       
         Scanner sc = new Scanner(System.in);
 
-        String chaine;
-        System.out.println("Entre moi une chaine de caractere qui ce termine par le caractere '.'");
-        chaine = sc.nextLine();
+       
+        System.out.println("Entre  une chaine de caractere qui ce termine par le caractere '.'");
+         String chaine = sc.nextLine();
 
-        int compteur = 0;
+        System.out.println("Entrez la lettre rechercher");
+        char lettreCherchee = sc.next().charAt(0);
 
-        if (chaine [] "est egal a '.'") {
-            System.out.println("la chaine est vide" );
-        }
+        String resultat = compterOccurence(chaine, lettreCherchee);
 
+        System.out.println(resultat);
+
+       
      
 
         sc.close();
